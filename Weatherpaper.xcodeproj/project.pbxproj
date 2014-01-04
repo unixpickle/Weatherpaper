@@ -14,21 +14,15 @@
 		FAD832C21877A9D0004AE0FF /* ANAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD832C11877A9D0004AE0FF /* ANAppDelegate.m */; };
 		FAD832C51877A9D0004AE0FF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAD832C31877A9D0004AE0FF /* MainMenu.xib */; };
 		FAD832C71877A9D0004AE0FF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAD832C61877A9D0004AE0FF /* Images.xcassets */; };
-		FAD832CE1877A9D0004AE0FF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD832CD1877A9D0004AE0FF /* XCTest.framework */; };
-		FAD832CF1877A9D0004AE0FF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD832AE1877A9D0004AE0FF /* Cocoa.framework */; };
-		FAD832D71877A9D0004AE0FF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAD832D51877A9D0004AE0FF /* InfoPlist.strings */; };
-		FAD832D91877A9D0004AE0FF /* WeatherpaperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD832D81877A9D0004AE0FF /* WeatherpaperTests.m */; };
+		FAD832EF1877AEAF004AE0FF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD832EE1877AEAF004AE0FF /* CoreLocation.framework */; };
+		FAD832FD1877BB40004AE0FF /* ANAddressRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD832F81877BB40004AE0FF /* ANAddressRequest.m */; };
+		FAD832FE1877BB40004AE0FF /* ANAsyncRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD832FA1877BB40004AE0FF /* ANAsyncRequest.m */; };
+		FAD832FF1877BB40004AE0FF /* ANConditionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD832FC1877BB40004AE0FF /* ANConditionRequest.m */; };
+		FAD833051877C38D004AE0FF /* ANConditionRules.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD833041877C38D004AE0FF /* ANConditionRules.m */; };
+		FAD833101877C43F004AE0FF /* ANImageDirectoryQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD8330D1877C43F004AE0FF /* ANImageDirectoryQueue.m */; };
+		FAD833111877C43F004AE0FF /* ANVoidQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD8330F1877C43F004AE0FF /* ANVoidQueue.m */; };
+		FAD833141877CAFD004AE0FF /* ANRefreshTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD833131877CAFD004AE0FF /* ANRefreshTimer.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		FAD832D01877A9D0004AE0FF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FAD832A31877A9CF004AE0FF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FAD832AA1877A9CF004AE0FF;
-			remoteInfo = Weatherpaper;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		FAD832AB1877A9D0004AE0FF /* Weatherpaper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weatherpaper.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,11 +39,23 @@
 		FAD832C11877A9D0004AE0FF /* ANAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ANAppDelegate.m; sourceTree = "<group>"; };
 		FAD832C41877A9D0004AE0FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		FAD832C61877A9D0004AE0FF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		FAD832CC1877A9D0004AE0FF /* WeatherpaperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherpaperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD832CD1877A9D0004AE0FF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		FAD832D41877A9D0004AE0FF /* WeatherpaperTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WeatherpaperTests-Info.plist"; sourceTree = "<group>"; };
-		FAD832D61877A9D0004AE0FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		FAD832D81877A9D0004AE0FF /* WeatherpaperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherpaperTests.m; sourceTree = "<group>"; };
+		FAD832EE1877AEAF004AE0FF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FAD832F71877BB40004AE0FF /* ANAddressRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANAddressRequest.h; sourceTree = "<group>"; };
+		FAD832F81877BB40004AE0FF /* ANAddressRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANAddressRequest.m; sourceTree = "<group>"; };
+		FAD832F91877BB40004AE0FF /* ANAsyncRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANAsyncRequest.h; sourceTree = "<group>"; };
+		FAD832FA1877BB40004AE0FF /* ANAsyncRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANAsyncRequest.m; sourceTree = "<group>"; };
+		FAD832FB1877BB40004AE0FF /* ANConditionRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANConditionRequest.h; sourceTree = "<group>"; };
+		FAD832FC1877BB40004AE0FF /* ANConditionRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANConditionRequest.m; sourceTree = "<group>"; };
+		FAD833031877C38D004AE0FF /* ANConditionRules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANConditionRules.h; sourceTree = "<group>"; };
+		FAD833041877C38D004AE0FF /* ANConditionRules.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANConditionRules.m; sourceTree = "<group>"; };
+		FAD8330B1877C43F004AE0FF /* ANGeneralImageQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANGeneralImageQueue.h; sourceTree = "<group>"; };
+		FAD8330C1877C43F004AE0FF /* ANImageDirectoryQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANImageDirectoryQueue.h; sourceTree = "<group>"; };
+		FAD8330D1877C43F004AE0FF /* ANImageDirectoryQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANImageDirectoryQueue.m; sourceTree = "<group>"; };
+		FAD8330E1877C43F004AE0FF /* ANVoidQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANVoidQueue.h; sourceTree = "<group>"; };
+		FAD8330F1877C43F004AE0FF /* ANVoidQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANVoidQueue.m; sourceTree = "<group>"; };
+		FAD833121877CAFD004AE0FF /* ANRefreshTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANRefreshTimer.h; sourceTree = "<group>"; };
+		FAD833131877CAFD004AE0FF /* ANRefreshTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANRefreshTimer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,16 +63,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAD832EF1877AEAF004AE0FF /* CoreLocation.framework in Frameworks */,
 				FAD832AF1877A9D0004AE0FF /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FAD832C91877A9D0004AE0FF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FAD832CF1877A9D0004AE0FF /* Cocoa.framework in Frameworks */,
-				FAD832CE1877A9D0004AE0FF /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,7 +75,6 @@
 			isa = PBXGroup;
 			children = (
 				FAD832B41877A9D0004AE0FF /* Weatherpaper */,
-				FAD832D21877A9D0004AE0FF /* WeatherpaperTests */,
 				FAD832AD1877A9D0004AE0FF /* Frameworks */,
 				FAD832AC1877A9D0004AE0FF /* Products */,
 			);
@@ -87,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				FAD832AB1877A9D0004AE0FF /* Weatherpaper.app */,
-				FAD832CC1877A9D0004AE0FF /* WeatherpaperTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +91,7 @@
 		FAD832AD1877A9D0004AE0FF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FAD832EE1877AEAF004AE0FF /* CoreLocation.framework */,
 				FAD832AE1877A9D0004AE0FF /* Cocoa.framework */,
 				FAD832CD1877A9D0004AE0FF /* XCTest.framework */,
 				FAD832B01877A9D0004AE0FF /* Other Frameworks */,
@@ -115,8 +112,14 @@
 		FAD832B41877A9D0004AE0FF /* Weatherpaper */ = {
 			isa = PBXGroup;
 			children = (
+				FAD8330A1877C43E004AE0FF /* Queues */,
+				FAD832F61877BB40004AE0FF /* Fetchers */,
 				FAD832C01877A9D0004AE0FF /* ANAppDelegate.h */,
 				FAD832C11877A9D0004AE0FF /* ANAppDelegate.m */,
+				FAD833031877C38D004AE0FF /* ANConditionRules.h */,
+				FAD833041877C38D004AE0FF /* ANConditionRules.m */,
+				FAD833121877CAFD004AE0FF /* ANRefreshTimer.h */,
+				FAD833131877CAFD004AE0FF /* ANRefreshTimer.m */,
 				FAD832C31877A9D0004AE0FF /* MainMenu.xib */,
 				FAD832C61877A9D0004AE0FF /* Images.xcassets */,
 				FAD832B51877A9D0004AE0FF /* Supporting Files */,
@@ -136,22 +139,29 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		FAD832D21877A9D0004AE0FF /* WeatherpaperTests */ = {
+		FAD832F61877BB40004AE0FF /* Fetchers */ = {
 			isa = PBXGroup;
 			children = (
-				FAD832D81877A9D0004AE0FF /* WeatherpaperTests.m */,
-				FAD832D31877A9D0004AE0FF /* Supporting Files */,
+				FAD832F71877BB40004AE0FF /* ANAddressRequest.h */,
+				FAD832F81877BB40004AE0FF /* ANAddressRequest.m */,
+				FAD832F91877BB40004AE0FF /* ANAsyncRequest.h */,
+				FAD832FA1877BB40004AE0FF /* ANAsyncRequest.m */,
+				FAD832FB1877BB40004AE0FF /* ANConditionRequest.h */,
+				FAD832FC1877BB40004AE0FF /* ANConditionRequest.m */,
 			);
-			path = WeatherpaperTests;
+			path = Fetchers;
 			sourceTree = "<group>";
 		};
-		FAD832D31877A9D0004AE0FF /* Supporting Files */ = {
+		FAD8330A1877C43E004AE0FF /* Queues */ = {
 			isa = PBXGroup;
 			children = (
-				FAD832D41877A9D0004AE0FF /* WeatherpaperTests-Info.plist */,
-				FAD832D51877A9D0004AE0FF /* InfoPlist.strings */,
+				FAD8330B1877C43F004AE0FF /* ANGeneralImageQueue.h */,
+				FAD8330C1877C43F004AE0FF /* ANImageDirectoryQueue.h */,
+				FAD8330D1877C43F004AE0FF /* ANImageDirectoryQueue.m */,
+				FAD8330E1877C43F004AE0FF /* ANVoidQueue.h */,
+				FAD8330F1877C43F004AE0FF /* ANVoidQueue.m */,
 			);
-			name = "Supporting Files";
+			path = Queues;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,24 +184,6 @@
 			productReference = FAD832AB1877A9D0004AE0FF /* Weatherpaper.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FAD832CB1877A9D0004AE0FF /* WeatherpaperTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FAD832DF1877A9D0004AE0FF /* Build configuration list for PBXNativeTarget "WeatherpaperTests" */;
-			buildPhases = (
-				FAD832C81877A9D0004AE0FF /* Sources */,
-				FAD832C91877A9D0004AE0FF /* Frameworks */,
-				FAD832CA1877A9D0004AE0FF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FAD832D11877A9D0004AE0FF /* PBXTargetDependency */,
-			);
-			name = WeatherpaperTests;
-			productName = WeatherpaperTests;
-			productReference = FAD832CC1877A9D0004AE0FF /* WeatherpaperTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -201,11 +193,6 @@
 				CLASSPREFIX = AN;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Alex Nichol";
-				TargetAttributes = {
-					FAD832CB1877A9D0004AE0FF = {
-						TestTargetID = FAD832AA1877A9CF004AE0FF;
-					};
-				};
 			};
 			buildConfigurationList = FAD832A61877A9CF004AE0FF /* Build configuration list for PBXProject "Weatherpaper" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -221,7 +208,6 @@
 			projectRoot = "";
 			targets = (
 				FAD832AA1877A9CF004AE0FF /* Weatherpaper */,
-				FAD832CB1877A9D0004AE0FF /* WeatherpaperTests */,
 			);
 		};
 /* End PBXProject section */
@@ -238,14 +224,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FAD832CA1877A9D0004AE0FF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FAD832D71877A9D0004AE0FF /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -254,27 +232,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAD832BB1877A9D0004AE0FF /* main.m in Sources */,
+				FAD833101877C43F004AE0FF /* ANImageDirectoryQueue.m in Sources */,
 				FAD832C21877A9D0004AE0FF /* ANAppDelegate.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FAD832C81877A9D0004AE0FF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FAD832D91877A9D0004AE0FF /* WeatherpaperTests.m in Sources */,
+				FAD833141877CAFD004AE0FF /* ANRefreshTimer.m in Sources */,
+				FAD832FF1877BB40004AE0FF /* ANConditionRequest.m in Sources */,
+				FAD832FE1877BB40004AE0FF /* ANAsyncRequest.m in Sources */,
+				FAD832FD1877BB40004AE0FF /* ANAddressRequest.m in Sources */,
+				FAD833111877C43F004AE0FF /* ANVoidQueue.m in Sources */,
+				FAD833051877C38D004AE0FF /* ANConditionRules.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		FAD832D11877A9D0004AE0FF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FAD832AA1877A9CF004AE0FF /* Weatherpaper */;
-			targetProxy = FAD832D01877A9D0004AE0FF /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FAD832B71877A9D0004AE0FF /* InfoPlist.strings */ = {
@@ -299,14 +268,6 @@
 				FAD832C41877A9D0004AE0FF /* Base */,
 			);
 			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		FAD832D51877A9D0004AE0FF /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FAD832D61877A9D0004AE0FF /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -406,46 +367,6 @@
 			};
 			name = Release;
 		};
-		FAD832E01877A9D0004AE0FF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Weatherpaper.app/Contents/MacOS/Weatherpaper";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Weatherpaper/Weatherpaper-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "WeatherpaperTests/WeatherpaperTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		FAD832E11877A9D0004AE0FF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Weatherpaper.app/Contents/MacOS/Weatherpaper";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Weatherpaper/Weatherpaper-Prefix.pch";
-				INFOPLIST_FILE = "WeatherpaperTests/WeatherpaperTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -463,14 +384,6 @@
 			buildConfigurations = (
 				FAD832DD1877A9D0004AE0FF /* Debug */,
 				FAD832DE1877A9D0004AE0FF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		FAD832DF1877A9D0004AE0FF /* Build configuration list for PBXNativeTarget "WeatherpaperTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FAD832E01877A9D0004AE0FF /* Debug */,
-				FAD832E11877A9D0004AE0FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
