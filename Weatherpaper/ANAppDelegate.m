@@ -29,7 +29,15 @@
     return [[self saveDirectory] stringByAppendingPathComponent:@"timer"];
 }
 
+- (void)receiveWakeNote:(NSNotification *)note {
+    [self refreshWallpaper:nil];
+}
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+    [[[NSWorkspace sharedWorkspace] notificationCenter] addObserver:self
+                                                           selector:@selector(receiveWakeNote:)
+                                                               name:NSWorkspaceDidWakeNotification object: NULL];
+    
     [self.window setLevel:CGShieldingWindowLevel()];
     
     NSString * path = [ANAppDelegate rulesSavePath];
@@ -62,6 +70,7 @@
     [NSTimer scheduledTimerWithTimeInterval:1 target:self
                                    selector:@selector(updateTimerMenuItem)
                                    userInfo:nil repeats:YES];
+    [self refreshWallpaper:nil];
 }
 
 - (void)saveRules {

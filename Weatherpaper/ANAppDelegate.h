@@ -36,6 +36,8 @@
 + (NSString *)rulesSavePath;
 + (NSString *)timerSavePath;
 
+- (void)receiveWakeNote:(NSNotification *)note;
+
 - (void)saveRules;
 - (void)saveTimer;
 - (void)setPath:(NSString *)path forQueueIndex:(NSInteger)row;

@@ -723,7 +723,7 @@
                             <rect key="frame" x="1" y="227" width="609" height="16"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
-                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="37" horizontal="NO" id="x4S-Sd-Hno">
+                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="x4S-Sd-Hno">
                             <rect key="frame" x="-15" y="17" width="16" height="0.0"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
@@ -746,11 +746,11 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="CUQ-sA-4I2">
                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
+                            <font key="font" metaFont="menu"/>
                             <menu key="menu" title="OtherViews" id="v6a-YL-o66">
                                 <items>
                                     <menuItem title="Every three hours" id="DJk-RQ-pMy"/>
-                                    <menuItem title="Every hour" state="on" id="tS4-NP-tjU"/>
+                                    <menuItem title="Every hour" id="tS4-NP-tjU"/>
                                     <menuItem title="Every 30 minutes" id="oQo-pY-kzb"/>
                                 </items>
                             </menu>
